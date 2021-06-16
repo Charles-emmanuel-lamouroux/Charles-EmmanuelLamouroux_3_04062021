@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Charles-emmanuel-lamouroux/Charles-EmmanuelLamouroux_3_04062021.git"
+  },
+  "author": "Charles-Emmanuel Lamouroux",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Charles-emmanuel-lamouroux/Charles-EmmanuelLamouroux_3_04062021/issues"
+  },
+  "homepage": "https://github.com/Charles-emmanuel-lamouroux/Charles-EmmanuelLamouroux_3_04062021#readme"
+}

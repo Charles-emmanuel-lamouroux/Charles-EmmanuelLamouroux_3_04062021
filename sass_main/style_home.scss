@@ -1,0 +1,155 @@
+$primaire: #9356dc;
+$secondaire: #ff79da;
+$tertiaire: #99e2d0;
+$ombre: #e7e7e7;
+$background: #f6f6f6;
+
+body {
+  margin: 0px;
+}
+a {
+  text-decoration: none;
+}
+
+header {
+  height: 64px;
+  border-bottom: solid 2px #cfcfcf;
+  div {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 22px;
+    padding-bottom: 10px;
+    justify-items: center;
+  }
+}
+
+#localisation {
+  background-color: #eaeaea;
+
+  #block {
+    width: 180px;
+    height: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: auto;
+    > i {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    > input {
+      background-color: #eaeaea;
+      border: none;
+      font-weight: bold;
+      color: black;
+    }
+  }
+}
+
+#accroche {
+  background-color: $background;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  &_titre {
+    margin-top: 0;
+    margin-left: 65px;
+    margin-right: 80px;
+    padding-top: 40px;
+    text-align: center;
+  }
+  &_text {
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+  }
+  &_ancre {
+    width: 220px;
+    height: 50px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 56px;
+    text-align: center;
+    line-height: 50px;
+
+    background: linear-gradient(to bottom right, #ef74da, #a05adb);
+    border: none;
+    border-radius: 50px;
+    color: #ffffff;
+  }
+}
+
+.rule {
+  padding-left: 20px;
+  padding-right: 20px;
+  &_titre {
+    padding-top: 25px;
+  }
+  &_list {
+    padding-left: 0;
+    &_item {
+      height: 70px;
+      list-style: none;
+      display: flex;
+      flex-wrap: nowrap;
+      margin-bottom: 25px;
+      &_art {
+        width: 325px;
+        height: 70px;
+        display: flex;
+        flex-wrap: nowrap;
+        line-height: 70px;
+        background-color: $background;
+        border-radius: 20px;
+        box-shadow: 2px 3px 2px $ombre;
+        &_num {
+          width: 25px;
+          height: 25px;
+          margin-top: auto;
+          margin-bottom: auto;
+          margin-left: -12px;
+          text-align: center;
+          line-height: 25px;
+          background-color: $primaire;
+          border-radius: 50%;
+        }
+        &_picto {
+          margin-top: auto;
+          margin-bottom: auto;
+          padding-left: 25px;
+          padding-right: 15px;
+        }
+        &_text {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+#restaurant {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: $background;
+  > .restaurant_titre {
+    padding-top: 25px;
+  }
+  a {
+    width: 340px;
+    height: 250px;
+    border-radius: 20px;
+    .restaurant_picture {
+      width: 340px;
+      height: 170px;
+      .images {
+        img {
+          width: 340px;
+          height: 170px;
+          object-fit: cover;
+          object-position: 50% 50%;
+        }
+      }
+    }
+  }
+}

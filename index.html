@@ -1,4 +1,4 @@
-<html lang="fr">
+<!DOCTYPE html lang="fr">
     <head>
         <meta charset="utf-8">
         <title>ohmyfood</title>
@@ -8,7 +8,10 @@
             crossorigin="anonymous"
         ></script>
         
-        <!--ajouter les lien vers les ficher CSS-->
+        <link
+            rel="stylesheet"
+            href="CSS/style_home.css"
+        />
         
     </head>
     
@@ -24,98 +27,125 @@
         <main>
             <!--localisation-->
             <div id="localisation">
-                <i class="fas fa-map-marker-alt symbol"></i>
-                <input 
-                    type="text" 
-                    placeholder="Paris, Belleville"
-                    id="formulaire"
-                    class="champ"
-                />
+                <div id="block">
+                    <i class="fas fa-map-marker-alt symbol"></i>
+                    <input 
+                        type="text" 
+                        placeholder="Paris, Belleville"
+                        id="formulaire"
+                        class="champ"
+                    />
+                </div>
             </div>
+            <article id="accroche">
+                <h1 id="accroche_titre">Réservez le menu qui vous convient</h1>
+                <p id="accroche_text">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+                <a id="accroche_ancre" href="#restaurant">Explorer nos restaurant</a>
+            </article>
             <!--Fonctionnement-->
             <section class="rule">
                 <h1 class="rule_titre">Fonctionnement</h1>
                 <ul class="rule_list">
                     <li class="rule_list_item">
-                        <div class="rule_list_item_num">1</div>
-                        <div class="rule_list_item_picto">
-                            <i class="fas fa-mobile-alt"></i>
+                        <div class="rule_list_item_art">
+                            <div class="rule_list_item_art_num">1</div>
+                            <div class="rule_list_item_art_picto">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <p class="rule_list_item_art_text">Choisissez un restaurant</p>
                         </div>
-                        <p class="rule_list_item_text">Choisissez un restaurant</p>
                     </li>
                     <li class="rule_list_item">
-                        <div class="rule_list_item_num">2</div>
-                        <div class="rule_list_item_picto">
-                            <i class="fas fa-list-ul"></i>
+                        <div class="rule_list_item_art">
+                            <div class="rule_list_item_art_num">2</div>
+                            <div class="rule_list_item_art_picto">
+                                <i class="fas fa-list-ul"></i>
+                            </div>
+                            <p class="rule_list_item_art_text">Composez votre menu</p>
                         </div>
-                        <p class="rule_list_item_text">Composez votre menu</p>
                     </li>
                     <li class="rule_list_item">
-                        <div class="rule_list_item_num">3</div>
-                        <div class="rule_list_item_picto">
-                            <i class="fas fa-store"></i>
+                        <div class="rule_list_item_art">
+                            <div class="rule_list_item_art_num">3</div>
+                            <div class="rule_list_item_art_picto">
+                                <i class="fas fa-store"></i>
+                            </div>
+                            <p class="rule_list_item_art_text">Dégustez au restaurant</p>
                         </div>
-                        <p class="rule_list_item_text">Dégustez au restaurant</p>
                     </li>
                 </ul>
             </section>
             <!--choix du restaurant-->
-            <section class="restaurant">
-                <a href="page/la_palette_du_gout.html">
-                    <div class="restaurant_picture">
-                        <article class="new">Nouveau</article>
-                    </div>
-                    <div class="restaurant_description">
-                        <article class="restaurant_description_text">
-                            <h2>La palette du goût</h2>
-                            <p>Ménilmontant</p>
-                        </article>
-                        <article class="link">
-                            <i class="far fa-heart"></i>
-                        </article>
-                    </div>
-                </a>
-                <a href="page/la_note_enchantee.html">
-                    <div class="restaurant_picture">
-                        <article class="new">Nouveau</article>
-                    </div>
-                    <div class="restaurant_description">
-                        <article class="restaurant_description_text">
-                            <h2>La palette du goût</h2>
-                            <p>Ménilmontant</p>
-                        </article>
-                        <article class="link">
-                            <i class="far fa-heart"></i>
-                        </article>
-                    </div>
-                </a>
-                <a href="page/a_la_francaise.html">
-                    <div class="restaurant_picture">
-                    </div>
-                    <div class="restaurant_description">
-                        <article class="restaurant_description_text">
-                            <h2>La palette du goût</h2>
-                            <p>Ménilmontant</p>
-                        </article>
-                        <article class="link">
-                            <i class="far fa-heart"></i>
-                        </article>
-                    </div>
-                </a>
-                <a href="page/le_delice_des_sens.html">
-                    <div class="restaurant_picture">
-                    </div>
-                    <div class="restaurant_description">
-                        <article class="restaurant_description_text">
-                            <h2>La palette du goût</h2>
-                            <p>Ménilmontant</p>
-                        </article>
-                        <article class="link">
-                            <i class="far fa-heart"></i>
-                        </article>
-                    </div>
-                </a>
-
+            <section id="restaurant">
+                <h1 class="restaurant_titre">Restaurant</h1>
+                <div>
+                    <a href="page/la_palette_du_gout.html">
+                        <div class="restaurant_picture">
+                            <div class="images">
+                                <img src="images/restaurants/la_palette_du_gout.jpg" alt="La palette du gôut">
+                            </div>
+                            <article class="new">Nouveau</article>
+                        </div>
+                        <div class="restaurant_description">
+                            <article class="restaurant_description_text">
+                                <h2>La palette du goût</h2>
+                                <p>Ménilmontant</p>
+                            </article>
+                            <article class="link">
+                                <i class="far fa-heart"></i>
+                            </article>
+                        </div>
+                    </a>
+                    <a href="page/la_note_enchantee.html">
+                        <div class="restaurant_picture">
+                            <div class="images">
+                                <img src="images/restaurants/la_note_enchantee.jpg" alt="La palette du gôut">
+                            </div>
+                            <article class="new">Nouveau</article>
+                        </div>
+                        <div class="restaurant_description">
+                            <article class="restaurant_description_text">
+                                <h2>La palette du goût</h2>
+                                <p>Ménilmontant</p>
+                            </article>
+                            <article class="link">
+                                <i class="far fa-heart"></i>
+                            </article>
+                        </div>
+                    </a>
+                    <a href="page/a_la_francaise.html">
+                        <div class="restaurant_picture">
+                            <div class="images">
+                                <img src="images/restaurants/a_la_francaise.jpg" alt="La palette du gôut">
+                            </div>
+                        </div>
+                        <div class="restaurant_description">
+                            <article class="restaurant_description_text">
+                                <h2>La palette du goût</h2>
+                                <p>Ménilmontant</p>
+                            </article>
+                            <article class="link">
+                                <i class="far fa-heart"></i>
+                            </article>
+                        </div>
+                    </a>
+                    <a href="page/le_delice_des_sens.html">
+                        <div class="restaurant_picture">
+                            <div class="images">
+                                <img src="images/restaurants/le_delice_des_sens.jpg" alt="La palette du gôut">
+                            </div>
+                        </div>
+                        <div class="restaurant_description">
+                            <article class="restaurant_description_text">
+                                <h2>La palette du goût</h2>
+                                <p>Ménilmontant</p>
+                            </article>
+                            <article class="link">
+                                <i class="far fa-heart"></i>
+                            </article>
+                        </div>
+                    </a>
+                </div>
             </section>
         </main>
         <footer>

@@ -143,9 +143,10 @@ header {
       width: 340px;
       height: 170px;
       .images {
-        img {
-          width: 340px;
-          height: 170px;
+        width: 340px;
+        height: 170px;
+        border-radius: 20px;
+        &_restaurant {
           object-fit: cover;
           object-position: 50% 50%;
         }

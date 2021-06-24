@@ -108,6 +108,7 @@ header div {
   margin-left: -12px;
   text-align: center;
   line-height: 25px;
+  color: #ffffff;
   background-color: #9356dc;
   border-radius: 50%;
 }
@@ -119,6 +120,9 @@ header div {
 }
 .rule_list_item_art_text {
   margin: 0;
+}
+.rule_list_item_art:hover {
+  background-color: #f5edff;
 }
 
 #restaurant {
@@ -174,12 +178,30 @@ header div {
   height: 77px;
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-between;
   border-radius: 0 0 20px 20px;
   background-color: #ffffff;
 }
 #restaurant div a .restaurant_description_text {
   width: 264px;
+  margin-left: 20px;
+}
+#restaurant div a .restaurant_description_text h2 {
+  margin-top: 10px;
+  margin-bottom: 1px;
+}
+#restaurant div a .restaurant_description_text p {
+  margin-top: 5px;
+}
+#restaurant div a .restaurant_description .link .fa-heart {
+  width: 70px;
+  text-align: center;
+  line-height: 77px;
+  font-size: 1.3em;
+}
+#restaurant div a .restaurant_description .link .fa-heart:hover {
+  color: #9356dc;
 }
 
 /*# sourceMappingURL=style_home.css.map */

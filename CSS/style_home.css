@@ -200,8 +200,40 @@ header div {
   line-height: 77px;
   font-size: 1.3em;
 }
-#restaurant div a .restaurant_description .link .fa-heart:hover {
-  color: #9356dc;
+#restaurant div a .restaurant_description .link .fa-heart:active {
+  font-weight: bold;
+  color: linear-gradient(to bottom right, #ef74da, #a05adb);
+}
+
+footer {
+  background-color: #353535;
+  color: #ffffff;
+}
+footer section {
+  margin-left: 25px;
+  padding-bottom: 30px;
+}
+footer section h1 {
+  margin: 0px;
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+footer section ul {
+  margin: 0px;
+  padding-left: 0;
+  list-style: none;
+}
+footer section ul li {
+  display: flex;
+  margin: 5px;
+  line-height: 20px;
+  vertical-align: middle;
+}
+footer section ul li i {
+  margin-right: 10px;
+}
+footer section ul li p {
+  margin: 0px;
 }
 
 /*# sourceMappingURL=style_home.css.map */

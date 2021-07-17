@@ -203,11 +203,24 @@ header {
             line-height: 77px;
             font-size: 1.3em;
           }
-          .fa-heart:active {
+          .fa-heart:hover {
             font-weight: bold;
             color: linear-gradient(to bottom right, #ef74da, #a05adb);
           }
         }
+      }
+    }
+  }
+}
+
+.menu {
+  .categorie {
+    width: 375px;
+    height: 270px;
+    background-color: #a05adb;
+    ul {
+      list-style: none;
+      .categorie_titre {
       }
     }
   }

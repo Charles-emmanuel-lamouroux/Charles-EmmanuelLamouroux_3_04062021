@@ -200,11 +200,19 @@ header div {
   line-height: 77px;
   font-size: 1.3em;
 }
-#restaurant div a .restaurant_description .link .fa-heart:active {
+#restaurant div a .restaurant_description .link .fa-heart:hover {
   font-weight: bold;
   color: linear-gradient(to bottom right, #ef74da, #a05adb);
 }
 
+.menu .categorie {
+  width: 375px;
+  height: 270px;
+  background-color: #a05adb;
+}
+.menu .categorie ul {
+  list-style: none;
+}
 footer {
   background-color: #353535;
   color: #ffffff;
